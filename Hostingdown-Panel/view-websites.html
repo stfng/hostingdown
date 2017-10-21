@@ -262,7 +262,7 @@
                 <!-- START BREADCRUMB -->
                 <ol class="breadcrumb">
                   <li class="breadcrumb-item"><a href="#">Websites</a></li>
-                  <li class="breadcrumb-item active">Add Website</li>
+                  <li class="breadcrumb-item active">View Website</li>
                 </ol>
                 <!-- END BREADCRUMB -->
               </div>
@@ -276,236 +276,137 @@
                <div class="col-md-12">
                   <div class="card card-transparent">
                      <div class="card-header ">
-                        <div class="card-title">ADD WEBSITES</div>
+                        <div class="card-title">VIEW WEBSITES</div>
                      </div>
                      <div class="card-block">
-                        <form id="form-project" role="form" autocomplete="off" novalidate="novalidate">
-                           <p>Basic Preferences</p>
-                           <div class="form-group-attached">
-                              <div class="row clearfix">
-                                 <div class="col-md-6">
-                                    <div class="form-group form-group-default required" aria-required="true">
-                                       <label>Website URL</label>
-                                       <input type="text" class="form-control" placeholder="Your website address to test." name="website" required="" aria-required="true">
+                         <table class="table table-hover" id="basicTable">
+                           <thead>
+                              <tr>
+                                 <th style="width:1%" class="text-center">
+                                    <button class="btn btn-link"><i class="pg-trash"></i>
+                                    </button>
+                                 </th>
+                                 <th style="width:20%">Website</th>
+                                 <th style="width:25%">Services Monitoring</th>
+                                 <th style="width:15%">On/Off</th>
+                                 <th style="width:15%">Status</th>
+                                 <th style="width:20%">Action</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr>
+                                 <td class="v-align-middle">
+                                    <div class="checkbox text-center">
+                                       <input type="checkbox" value="3" id="checkbox1">
+                                       <label for="checkbox1" class="no-padding no-margin"></label>
                                     </div>
-                                 </div>
-                                 <div class="col-md-6">
-                                    <div class="form-group form-group-default">
-                                       <label>Hosting Provider</label>
-                                       <input type="text" placeholder="Choose your hosting provider." class="form-control" name="lastName">
+                                 </td>
+                                 <td class="v-align-middle ">
+                                    <p><a href="#Google.com" style="color:#626262;">google.com</a></p>
+                                 </td>
+                                 <td class="v-align-middle">
+                                    <p>
+                                        <button type="button" class="btn btn-success btn-sm btn-outline ladda-button" style="padding: 3px 9px;pointer-events:none;" data-style="expand-left" data-plugin="ladda">
+                                            <span class="ladda-label">HTTP</span>
+                                        </button>
+                                        <button type="button" class="btn btn-success btn-sm btn-outline ladda-button" style="padding: 3px 9px;pointer-events:none;" data-style="expand-left" data-plugin="ladda">
+                                            <span class="ladda-label">HTTPS</span>
+                                        </button>
+                                        <button type="button" class="btn btn-success btn-sm btn-outline ladda-button" style="padding: 3px 9px;pointer-events:none;" data-style="expand-left" data-plugin="ladda">
+                                            <span class="ladda-label">FTP</span>
+                                        </button>
+                                        <button type="button" class="btn btn-default btn-sm btn-outline ladda-button" style="padding: 3px 9px;pointer-events:none;" data-style="expand-left" data-plugin="ladda">
+                                            <span class="ladda-label">IMAP</span>
+                                        </button>
+                                    </p>
+                                 </td>
+                                 <td class="v-align-middle">
+                                    <input type="checkbox" data-init-plugin="switchery" />
+                                 </td>
+                                 <td class="v-align-middle">
+                                    <p>
+                                        <button type="button" class="btn btn-success btn-sm btn-outline ladda-button" style="padding: 3px 9px;pointer-events:none;" data-style="expand-left" data-plugin="ladda">
+                                            <span class="ladda-label">Active</span>
+                                        </button>
+                                    </p>
+                                 </td>
+                                 <td class="v-align-middle">
+                                     <div class="dropdown dropdown-default">
+                                         <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                             Actions
+                                         </button>
+                                     <div class="dropdown-menu">
+                                         <a class="dropdown-item" href="#">Edit</a>
+                                         <a class="dropdown-item" href="#" style="color: red;">Delete</a>
+                                     </div>
+                                     </div>
+                                 </td>
+                              </tr>
+                             <tr>
+                                <td class="v-align-middle">
+                                   <div class="checkbox text-center">
+                                      <input type="checkbox" value="3" id="checkbox1">
+                                      <label for="checkbox1" class="no-padding no-margin"></label>
+                                   </div>
+                                </td>
+                                <td class="v-align-middle ">
+                                   <p><a href="#Google.com" style="color:#626262;">msdeveci.net</a></p>
+                                </td>
+                                <td class="v-align-middle">
+                                   <p>
+                                       <button type="button" class="btn btn-success btn-sm btn-outline ladda-button" style="padding: 3px 9px;pointer-events:none;" data-style="expand-left" data-plugin="ladda">
+                                           <span class="ladda-label">HTTP</span>
+                                       </button>
+                                       <button type="button" class="btn btn-success btn-sm btn-outline ladda-button" style="padding: 3px 9px;pointer-events:none;" data-style="expand-left" data-plugin="ladda">
+                                           <span class="ladda-label">HTTPS</span>
+                                       </button>
+                                       <button type="button" class="btn btn-success btn-sm btn-outline ladda-button" style="padding: 3px 9px;pointer-events:none;" data-style="expand-left" data-plugin="ladda">
+                                           <span class="ladda-label">FTP</span>
+                                       </button>
+                                       <button type="button" class="btn btn-success btn-sm btn-outline ladda-button" style="padding: 3px 9px;pointer-events:none;" data-style="expand-left" data-plugin="ladda">
+                                           <span class="ladda-label">IMAP</span>
+                                       </button>
+                                   </p>
+                                </td>
+                                <td class="v-align-middle">
+                                   <input type="checkbox" data-init-plugin="switchery" checked/>
+                                </td>
+                                <td class="v-align-middle">
+                                   <p>
+                                       <button type="button" class="btn btn-warning btn-sm btn-outline ladda-button" style="padding: 3px 9px;pointer-events:none;" data-style="expand-left" data-plugin="ladda">
+                                           <span class="ladda-label">Disable</span>
+                                       </button>
+                                   </p>
+                                </td>
+                                <td class="v-align-middle">
+                                    <div class="dropdown dropdown-default">
+                                        <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Actions
+                                        </button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Edit</a>
+                                        <a class="dropdown-item" href="#" style="color: red;">Delete</a>
                                     </div>
-                                 </div>
-                              </div>
-                           </div>
-                           <p class="m-t-10">Advanced Information</p>
-                           <div class="form-group-attached">
-                                <div class="col-md-12 no-padding">
-                                    <div class="form-group form-group-default required" aria-required="true">
-                                        <label>Alert Trigger</label>
-                                        <input type="text" class="form-control" placeholder="How long to wait (in seconds) should we wait before considering your website is down." name="website" required="" aria-required="true">
                                     </div>
-                                </div>
-                                <div class="col-md-12 no-padding">
-                                    <p class="m-t-10">Check Rate</p>
-                                    <div class="radio radio-success">
-                                        <input type="radio" value="one" name="optionyes" id="one">
-                                        <label for="one">1 Min</label>
-                                        <input type="radio" checked="checked" value="two" name="optionyes" id="two">
-                                        <label for="two">2 Min</label>
-                                        <input type="radio" checked="checked" value="three" name="optionyes" id="three">
-                                        <label for="three">3 Min</label>
-                                        <input type="radio" checked="checked" value="four" name="optionyes" id="four">
-                                        <label for="four">4 Min</label>
-                                        <input type="radio" checked="checked" value="five" name="optionyes" id="five">
-                                        <label for="five">5 Min</label>
-                                    </div>
-                                    <span class="desc">How often do you want us to test your site?</span>
-                                </div>
-                                <hr>
-                                <div class="col-md-12 no-padding">
-                                    <p class="m-t-10">Test Locations</p>
-                                    <div id="Flags">
-                                      <div class="">
-                                        <span>USA</span>
-                                        <input type="checkbox">
-                                      </div>
-                                      <div class="">
-                                        <span>TR</span>
-                                        <input type="checkbox">
-                                      </div>
-                                      <div class="">
-                                        <span>DE</span>
-                                        <input type="checkbox">
-                                      </div>
-                                      <div class="">
-                                        <span>AR</span>
-                                        <input type="checkbox">
-                                      </div>
-                                      <div class="">
-                                        <span>CN</span>
-                                        <input type="checkbox">
-                                      </div>
-                                    </div>
-                                    <div class="clear" style="margin-top: 18px"></div>
-                                    <span class="desc">Select where we should test your site from.</span>
-                                </div>
-                                <div class="col-md-12 no-padding">
-                                    <p class="m-t-10">Other Services</p>
-                                    <div id="Flags">
-                                      <div onclick="$('#ftp-insider').slideToggle()" class="">
-                                        <span>FTP</span>
-                                      </div>
-                                      <div onclick="$('#email-insider').slideToggle()" class="">
-                                        <span>EMAIL</span>
-                                      </div>
-                                      <div onclick="$('#https-insider').slideToggle()" class="">
-                                        <span>HTTPS</span>
-                                      </div>
-                                      <div onclick="$('#imap-insider').slideToggle()" class="">
-                                        <span>IMAP</span>
-                                      </div>
-                                    </div>
-                                    <div class="clear" style="margin-top: 18px"></div>
-                                    <span class="desc">What else would you like us to check?</span>
-                                </div>
-                                <div id="ftp-insider" style="display: none;">
-                                    <div class="clear" style="margin-top: 5px"></div>
-                                    <div class="col-md-12 no-padding">
-                                        <div class="form-group form-group-default required" aria-required="true">
-                                            <label>FTP</label>
-                                            <input type="text" class="form-control" placeholder="ftp.website.com" name="website" aria-required="true">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="email-insider" style="display: none;">
-                                    <div class="clear" style="margin-top: 5px"></div>
-                                    <div class="col-md-12 no-padding">
-                                        <div class="form-group form-group-default required" aria-required="true">
-                                            <label>EMAIL</label>
-                                            <input type="email" class="form-control" placeholder="stefangol@hotmail.com" name="website" aria-required="true">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="https-insider" style="display: none;">
-                                    <div class="clear" style="margin-top: 5px"></div>
-                                    <div class="col-md-12 no-padding">
-                                        <div class="form-group form-group-default required" aria-required="true">
-                                            <label>HTTPS</label>
-                                            <input type="text" class="form-control" placeholder="https://website.com" name="website" aria-required="true">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="imap-insider" style="display: none;">
-                                    <div class="clear" style="margin-top: 5px"></div>
-                                    <div class="col-md-12 no-padding">
-                                        <div class="form-group form-group-default required" aria-required="true">
-                                            <label>imap</label>
-                                            <input type="text" class="form-control" placeholder="imap.website.com" name="website" aria-required="true">
-                                        </div>
-                                    </div>
-                                </div>
-                                <hr>
-                                <div class="col-md-12 no-padding">
-                                    <div class="form-group form-group-default required" aria-required="true">
-                                        <label>Website Speed Alert</label>
-                                        <input type="text" class="form-control" placeholder="Default: 10" name="website" aria-required="true">
-                                    </div>
-                                    <span class="desc no-margin">How long (in seconds) is too slow to load your website before we alert you?</span>
-                                </div>
-                                <div class="col-md-12 no-padding">
-                                    <p class="m-t-10">Alert Status Codes</p>
-                                    <div id="Flags">
-                                      <div class="">
-                                        <span>403</span>
-                                        <input type="checkbox">
-                                      </div>
-                                      <div class="">
-                                        <span>404</span>
-                                        <input type="checkbox">
-                                      </div>
-                                      <div class="">
-                                        <span>405</span>
-                                        <input type="checkbox">
-                                      </div>
-                                      <div class="">
-                                        <span>406</span>
-                                        <input type="checkbox">
-                                      </div>
-                                      <div class="">
-                                        <span>495</span>
-                                        <input type="checkbox">
-                                      </div>
-                                      <div class="">
-                                        <span>500</span>
-                                        <input type="checkbox">
-                                      </div>
-                                    </div>
-                                    <div class="clear" style="margin-top: 18px"></div>
-                                    <span class="desc">Select where we should test your site from.</span>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-2 no-padding">
-                                        <div class="clear" style="height: 10px;"></div>
-                                        <p>Contact Web Host</p>
-                                        <div class="radio radio-success">
-                                            <input type="radio" value="yes" name="yes" id="one">
-                                            <label for="yes">Yes</label>
-                                            <input type="radio" checked="checked" value="no" name="optionyes" id="two">
-                                            <label for="no">No</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-10 no-padding">
-                                        <div class="clear" style="height: 10px;"></div>
-                                        <p>Contact Groups</p>
-                                        <div class="form-group form-group-default form-group-default-select2" style="height: 60px; background: white">
-                                            <label>Select which group to contact when this website is down.</label>
-                                            <select class=" full-width" data-init-plugin="select2" multiple>
-                                                <option value="Jim">Jim</option>
-                                                <option value="John">John</option>
-                                                <option value="Lucy">Lucy</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                                <hr>
-                                <div class="col-md-12 no-padding">
-                                    <p>Alert Via</p>
-                                    <div class="checkbox check-success">
-                                        <input type="checkbox" value="1" id="checkbox1">
-                                        <label for="checkbox1">E-Mail</label>
-                                    </div>
-                                    <div class="checkbox check-success">
-                                        <input type="checkbox" value="1" id="checkbox2">
-                                        <label for="checkbox2">SMS</label>
-                                    </div>
-                                    <div class="checkbox check-success">
-                                        <input type="checkbox" value="1" id="checkbox3">
-                                        <label for="checkbox3">Mobile Notification</label>
-                                    </div>
-                                    <div class="checkbox check-success">
-                                        <input type="checkbox" value="2" id="checkbox4">
-                                        <label for="checkbox4">Web Notification</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-12 no-padding">
-                                    <p>When down, alert after (minute)</p>
-                                    <input type="text" id="range01">
-                                </div>
-                                <div class="col-md-12 no-padding">
-                                    <p>Resend alert every (down cycles)</p>
-                                    <input type="text" id="range01">
-                                </div>
-                                <hr>
-                                <div class="col-md-12 no-padding">
-                                    <div class="form-group form-group-default required ">
-                                        <label>Tags</label>
-                                        <input class="tagsinput custom-tag-input" type="text" value="hello World, quotes, inspiration" />
-                                    </div>
-                                </div>
-                           </div>
-                           <br />
-                           <button class="btn btn-success" type="submit">Add Website</button>
-                        </form>
+                                </td>
+                             </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                     <div class="row no-margin">
+                         <div class="col-md-6" style="padding-left: 20px;">
+                             <a href="#" class="btn btn-warning">Pause</a>
+                             <a href="#" class="btn btn-danger">Delete</a>
+                         </div>
+                         <div class="col-md-6 text-right">
+                             <a href="#" class="btn btn-default"><i class="fa fa-angle-left"></i></a>
+                             <a href="#" class="btn btn-default">1</a>
+                             <a href="#" class="btn btn-primary">2</a>
+                             <a href="#" class="btn btn-default">3</a>
+                             <a href="#" class="btn btn-default">4</a>
+                             <a href="#" class="btn btn-default">5</a>
+                            <a href="#" class="btn btn-default"><i class="fa fa-angle-right"></i></a>
+                         </div>
                      </div>
                   </div>
                </div>
