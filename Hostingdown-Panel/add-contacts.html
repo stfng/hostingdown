@@ -320,102 +320,121 @@
             <!-- BEGIN PlACE PAGE CONTENT HERE -->
             <div class="row">
                <div class="col-md-12">
-                  <div class="card card-transparent">
-                     <div class="card-header ">
-                        <div class="card-title">GENERAL SETTINGS</div>
-                     </div>
-                     <div class="card-block">
-                        <form id="form-project" role="form" autocomplete="off" novalidate="novalidate">
-                           <div class="form-group-attached">
-                              <div class="row clearfix">
-                                 <div class="col-md-6">
-                                    <div class="form-group form-group-default required" aria-required="true">
-                                       <label>Name Of Contact</label>
-                                       <input type="text" class="form-control" placeholder="Your name is here." name="website" required="" aria-required="true">
+                  <form id="form-project" role="form" autocomplete="off" novalidate="novalidate">
+                      <div class="card card-transparent no-padding" style="margin: -20px -20px 0 -20px;">
+                          <div class="card-block">
+                             <div class="card card-default">
+                                <div class="card-header  separator">
+                                   <div class="card-title">GENERAL SETTINGS</div>
+                                </div>
+                                <div class="clear" style="height: 5px;"></div>
+                                <div class="card-block">
+                                    <div class="form-group-attached">
+                                       <div class="row clearfix">
+                                          <div class="col-md-6">
+                                             <div class="form-group form-group-default required" aria-required="true">
+                                                <label>Name Of Contact</label>
+                                                <input type="text" class="form-control" placeholder="Your name is here." name="website" required="" aria-required="true">
+                                             </div>
+                                          </div>
+                                          <div class="col-md-6">
+                                             <div class="form-group form-group-default">
+                                                <label>E-Mail</label>
+                                                <input type="email" placeholder="email@hostingdown.com" class="form-control" name="lastName">
+                                             </div>
+                                          </div>
+                                       </div>
                                     </div>
+                                </div>
+                             </div>
+                          </div>
+                       </div>
+                       <div class="card card-transparent no-padding" style="margin: -20px -20px 0 -20px;">
+                           <div class="card-block">
+                              <div class="card card-default">
+                                 <div class="card-header  separator">
+                                    <div class="card-title">SMS SETTINGS</div>
                                  </div>
-                                 <div class="col-md-6">
-                                    <div class="form-group form-group-default">
-                                       <label>E-Mail</label>
-                                       <input type="email" placeholder="email@hostingdown.com" class="form-control" name="lastName">
+                                 <div class="clear" style="height: 5px;"></div>
+                                 <div class="card-block row">
+                                    <div class="col-md-6 no-padding">
+                                        <div class="form-group form-group-default form-group-default-select2 required">
+                                            <label class="">Phone Country Code</label>
+                                            <select class="full-width" data-placeholder="Select Country" data-init-plugin="select2">
+                                                <optgroup label="Alaskan/Hawaiian Time Zone">
+                                                    <option value="AK">Alaska</option>
+                                                    <option value="HI">Hawaii</option>
+                                                </optgroup>
+                                                <optgroup label="Pacific Time Zone">
+                                                    <option value="CA">California</option>
+                                                    <option value="NV">Nevada</option>
+                                                    <option value="OR">Oregon</option>
+                                                    <option value="WA">Washington</option>
+                                                </optgroup>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 no-padding">
+                                       <div class="form-group form-group-default">
+                                          <label>E-Mail</label>
+                                          <input type="tel" placeholder="Phone is here." class="form-control" name="lastName">
+                                       </div>
                                     </div>
                                  </div>
                               </div>
                            </div>
-                          <div class="card-header" style="padding-left: 0 !important;">
-                             <div class="card-title">SMS SETTINGS</div>
+                        </div>
+                        
+                        <div class="card card-transparent no-padding" style="margin: -20px -20px 0 -20px;">
+                          <div class="card-block">
+                              <div class="card card-default">
+                                <div class="card-header  separator">
+                                    <div class="card-title">SOCIAL SETTINGS</div>
+                                </div>
+                                <div class="clear" style="height: 5px;"></div>
+                                <div class="card-block row">
+                                    
+                                  <div class="col-md-6">
+                                      <button class="btn btn-block btn-primary" style="height: 54px;background:#4367b1;border-color:#4367b1;" type="button">
+                                      <span class="pull-left"><i class="fa fa-facebook"></i>
+                                      </span>
+                                      <span class="bold">Connect your Facebook Account</span>
+                                      </button>
+                                  </div>
+                                  
+                                  <div class="col-md-6" style='padding-left: 25px;'>
+                                      <button class="btn btn-block btn-primary" style="height: 54px;background:#62a8ea;border-color:#62a8ea;" type="button">
+                                      <span class="pull-left"><i class="fa fa-twitter"></i>
+                                      </span>
+                                      <span class="bold">Connect your Twitter Account</span>
+                                      </button>
+                                  </div>
+                                </div>
+                              </div>
                           </div>
-                           <div class="form-group-attached row">
-                                <div class="col-md-6 no-padding">
-                                    <div class="form-group form-group-default form-group-default-select2 required">
-                                        <label class="">Phone Country Code</label>
-                                        <select class="full-width" data-placeholder="Select Country" data-init-plugin="select2">
-                                            <optgroup label="Alaskan/Hawaiian Time Zone">
-                                                <option value="AK">Alaska</option>
-                                                <option value="HI">Hawaii</option>
-                                            </optgroup>
-                                            <optgroup label="Pacific Time Zone">
-                                                <option value="CA">California</option>
-                                                <option value="NV">Nevada</option>
-                                                <option value="OR">Oregon</option>
-                                                <option value="WA">Washington</option>
-                                            </optgroup>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 no-padding">
-                                   <div class="form-group form-group-default">
-                                      <label>E-Mail</label>
-                                      <input type="tel" placeholder="Phone is here." class="form-control" name="lastName">
-                                   </div>
-                                </div>
-                           </div>
-
-                          <div class="card-header" style="padding-left: 0 !important;">
-                             <div class="card-title">TWITTER SETTINGS</div>
-                          </div>
-                           <div class="form-group-attached row">
-                                <div class="col-md-8 no-padding">
-                                    <div class="form-group form-group-default form-group-default-select2 required">
-                                        <label class="">Select Twitter Account</label>
-                                        <select class="full-width" data-placeholder="Select Country" data-init-plugin="select2">
-                                            <optgroup label="Alaskan/Hawaiian Time Zone">
-                                                <option value="AK">Alaska</option>
-                                                <option value="HI">Hawaii</option>
-                                            </optgroup>
-                                            <optgroup label="Pacific Time Zone">
-                                                <option value="CA">California</option>
-                                                <option value="NV">Nevada</option>
-                                                <option value="OR">Oregon</option>
-                                                <option value="WA">Washington</option>
-                                            </optgroup>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-md-4" style='padding-left: 25px;'>
-                                    <button class="btn btn-block btn-primary" style="height: 54px;background:#62a8ea;border-color:#62a8ea;" type="button">
-                                     <span class="pull-left"><i class="fa fa-twitter"></i>
-                                     </span>
-                                     <span class="bold">Connect your Twitter Account</span>
-                                     </button>
-                                </div>
-                           </div>
-                             <div class="card-header" style="padding-left: 0 !important;">
-                                <div class="card-title">PUSH SETTINGS</div>
-                             </div>
-                              <div class="form-group-attached row">
-                                  <div class="checkbox check-success">
-                                      <input type="checkbox" value="one" name="optionyes" id="one">
-                                      <label for="one">Web notifications</label>
-                                      <input type="checkbox" checked="checked" value="two" name="optionyes" id="two">
-                                      <label for="two">Mobile notifications</label>
+                        </div>
+                        
+                        <div class="card card-transparent no-padding" style="margin: -20px -20px 0 -20px;">
+                            <div class="card-block">
+                              <div class="card card-default">
+                                  <div class="card-header  separator">
+                                    <div class="card-title">PUSH SETTINGS</div>
+                                  </div>
+                                  <div class="clear" style="height: 5px;"></div>
+                                  <div class="card-block row">
+                                      <div class="checkbox check-success">
+                                          <input type="checkbox" value="one" name="optionyes" id="one">
+                                          <label for="one">Web notifications</label>
+                                          <input type="checkbox" checked="checked" value="two" name="optionyes" id="two">
+                                          <label for="two">Mobile notifications</label>
+                                      </div>
                                   </div>
                               </div>
-                           <br />
-                           <button class="btn btn-success" type="submit">Add Contact</button>
-                        </form>
-                     </div>
-                  </div>
+                            </div>
+                        </div>
+                       <button class="btn btn-success" type="submit">Add Contact</button>
+                       <div class="clear" style="height: 15px;"></div>
+                   </form>
                </div>
             </div>
             <!-- END PLACE PAGE CONTENT HERE -->
