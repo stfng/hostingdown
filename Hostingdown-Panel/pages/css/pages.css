@@ -344,7 +344,7 @@ body.menu-pin .overlay .overlay-brand {
   display: block;
   height: 60px;
   line-height: 60px;
-  background-color: #272b35;
+  background-color: #f7f7f7;
   border-bottom: 1px solid #232730;
   color: #fff;
   width: 100%;
@@ -454,8 +454,7 @@ body.menu-pin .overlay .overlay-brand {
   font-family: Arial, sans-serif;
   display: inline-block;
   padding-left: 32px;
-  min-height: 40px;
-  line-height: 40px;
+  line-height: 25px;
   font-size: 14px;
   clear: both;
 }
@@ -464,7 +463,10 @@ body.menu-pin .overlay .overlay-brand {
 }
 .page-sidebar .sidebar-menu .menu-items > li > a > .arrow {
   float: right;
-  padding-right: 30px;
+  padding-right: 0px;
+  position: absolute;
+  right: 60px;
+  margin-top: -1px;
 }
 .page-sidebar .sidebar-menu .menu-items > li > a > .arrow:before {
   float: right;
@@ -487,11 +489,12 @@ body.menu-pin .overlay .overlay-brand {
   margin-top: 12px;
 }
 .page-sidebar .sidebar-menu .menu-items > li > a > .title {
-  float: left;
+  float: right;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-  width: 65%;
+  width: 80%;
+  margÃƒâ€žÃ‚Â±n*left:;
 }
 .page-sidebar .sidebar-menu .menu-items > li > a > .details {
   font-size: 12px;
@@ -604,8 +607,8 @@ body.menu-pin .overlay .overlay-brand {
   vertical-align: middle;
   position: relative;
   left: 0;
-  float: right;
-  margin-right: 14px;
+  border-radius: 5px !important;
+  float: left !important;
   color: #788195;
   font-size: 16px;
   -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.05, 0.74, 0.27, 0.99);
@@ -5946,6 +5949,7 @@ body > .pgn-wrapper {
 }
 .nav-tabs-fillup ~ .tab-content {
   background: #fff;
+  overflow: initial;
 }
 .nav-tabs-fillup.nav-tabs-left,
 .nav-tabs-fillup.nav-tabs-right {
@@ -6163,6 +6167,8 @@ https://github.com/IonDen/ion.rangeSlider
 }
 .irs-wrapper .irs-line {
   background-color: #e6e6e6;
+  border-radius: 20px;
+  overflow:;
 }
 .irs-wrapper .irs-line-mid,
 .irs-wrapper .irs-line-left,
@@ -7055,7 +7061,6 @@ body.rtl .checkbox label::after {
 }
 .form-group-attached > div:not(:last-child) .form-group-default,
 .form-group-attached > div:not(:last-child).form-group-default {
-  border-bottom-color: transparent;
 }
 /* Form layouts  : Responsive Handlers
 --------------------------------------------------
@@ -9247,7 +9252,7 @@ table.dataTable.table-condensed .sorting_desc:after {
   fill: #626262;
 }
 .line-chart[data-point-color="success"] .nvd3.nv-line .nvd3.nv-scatter .nv-groups .nv-point {
-  fill: #10cfbd;
+  fill: rgba(0, 0, 0, 0.99);
 }
 .line-chart[data-point-color="info"] .nvd3.nv-line .nvd3.nv-scatter .nv-groups .nv-point {
   fill: #3b4752;
@@ -12046,10 +12051,11 @@ Main components
 }
 .widget-8-chart {
   height: 100px;
-  width: 50%;
-  bottom: 0;
+  width: 31%;
+  bottom: -20px;
   position: absolute;
   right: 0;
+  opacity: .5;
 }
 .widget-8-chart .line-chart[data-points="true"] .nvd3.nv-line .nvd3.nv-scatter .nv-groups .nv-point {
   stroke-opacity: 0.3;
@@ -14694,3 +14700,4 @@ Main components
     display: none;
   }
 }
+

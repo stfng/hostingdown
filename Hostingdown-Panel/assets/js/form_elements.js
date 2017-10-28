@@ -106,7 +106,7 @@
         });
         //Single instance of tag inputs - can be initiated with simply using data-role="tagsinput" attribute in any input field
         $('.custom-tag-input').tagsinput({
-
+            
         });
 
         var myCustomTemplates = {
