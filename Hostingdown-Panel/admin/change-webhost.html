@@ -24,7 +24,6 @@
     <link href="../assets/plugins/select2/css/select2.min.css" rel="stylesheet" type="text/css" media="screen" />
     <link href="../assets/plugins/switchery/css/switchery.min.css" rel="stylesheet" type="text/css" media="screen" />
     <link href="../pages/css/pages-icons.css" rel="stylesheet" type="text/css">
-    <link href="../assets/plugins/summernote/css/summernote.css" rel="stylesheet" type="text/css" media="screen">    
     <link class="main-stylesheet" href="../pages/css/pages.css" rel="stylesheet" type="text/css" />
     <link class="main-stylesheet" href="../assets/css/style-new.css" rel="stylesheet" type="text/css" />
   </head>
@@ -193,10 +192,14 @@
               <div class="inner">
                 <!-- START BREADCRUMB -->
                 <ol class="breadcrumb">
-                  <li class="breadcrumb-item"><a href="#">Email Templates</a></li>
-                  <li class="breadcrumb-item active">Edit Email Templates</li>
+                  <li class="breadcrumb-item"><a href="#">Domains</a></li>
+                  <li class="breadcrumb-item active">Manage Domains</li>
                 </ol>
                 <!-- END BREADCRUMB -->
+                <div class="newSearch">
+                    <input type="text" placeholder="Search domains">
+                    <button><i class="fa fa-search"></i></button>
+                  </div>
               </div>
             </div>
           </div>
@@ -206,44 +209,73 @@
             <!-- BEGIN PlACE PAGE CONTENT HERE -->
             <div class="row">
                <div class="col-md-12">
-                  <form id="form-project" role="form" autocomplete="off" novalidate="novalidate">
-                      <div class="card card-transparent no-padding" style="margin: -20px -20px 0 -20px;">
-                          <div class="card-block">
-                             <div class="card card-default">
-                                <div class="clear" style="height: 5px;"></div>
-                                <div class="card-block">
-                                        <div class="form-group-attached">
-                                           <div class="row clearfix">
-                                              <div class="col-md-12">
-                                                 <div class="form-group form-group-default required" aria-required="true">
-                                                    <label>Subject</label>
-                                                    <input type="text" class="form-control" placeholder="Your subject is here." name="website" required="" aria-required="true">
-                                                 </div>
-                                              </div>
-                                           </div>
-                                        </div>
-                                        <div class="clear" style="height: 15px;"></div>
-                                        <label>Email Body </label>    
-                                        <div id="summernote">Hello Summernote</div>  
-                                        <div class="clear" style="height: 15px;"></div>
-                                        Action: <select class="cs-select cs-skin-slide" data-init-plugin="cs-select">
-                                            <option value="sightseeing">Welcome email</option>
-                                            <option value="business">Down Alert</option>
-                                            <option value="honeymoon">Up Alert</option>
-                                            <option value="honeymoon">Money Back</option>
-                                        </select>
-                                        <div class="clear" style="height: 15px;"></div>
-                                        <button class="btn btn-success" type="submit">Update Email Template</button>
-                                </div>
-                             </div>
-                          </div>
-                       </div>
-                       <style>
-                           .note-editor {
-                                border-color: #e0e0e0;
-                           }
-                       </style>
-                   </form>
+                  <div class="card card-transparent" style="background: white; padding-bottom: 25px;">
+                      <div class="card-header ">
+                          <div class="card-title">Total Domains: 1216</div>
+                        </div>
+                     <div class="card-block">
+                         <table class="table table-hover" id="basicTable">
+                           <thead>
+                              <tr>
+                                 <th style="width:1%" class="text-center">
+                                    <button class="btn btn-link"><i class="pg-trash"></i>
+                                    </button>
+                                 </th>
+                                 <th>ID</th>
+                                 <th>Domain</th>
+                                 <th>Old Webhost</th>
+                                 <th>New Webhost</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                                <tr>
+                                   <td class="v-align-middle">
+                                      <div class="checkbox text-center">
+                                         <input type="checkbox" value="3" id="checkbox1">
+                                         <label for="checkbox1" class="no-padding no-margin"></label>
+                                      </div>
+                                   </td>
+                                   <td class="v-align-middle ">
+                                      <p>1</p>
+                                   </td>
+                                   <td class="v-align-middle ">
+                                      <p>google.com</p>
+                                   </td>
+                                   <td class="v-align-middle">
+                                      <p>
+                                            Hostagor
+                                      </p>
+                                   </td>
+                                   <td class="v-align-middle">
+                                      <p>
+                                          <select class="full-width" data-init-plugin="select2">
+                                              <option value="CT">Hostagor</option>
+                                              <option value="CT">Godaddy</option>
+                                              <option value="CT">Another</option>
+                                          </select>
+                                      </p>
+                                   </td>
+                                </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                     <div class="row no-margin">
+                         <div class="col-md-6" style="padding-left: 20px;">
+                            <a href="#" class="btn btn-primary">Decline</a>
+                            <a href="#" class="btn btn-success">Save</a>
+                         </div>
+                         <div class="col-md-6 text-right">
+                             <a href="#" class="btn btn-default"><i class="fa fa-angle-left"></i></a>
+                             <a href="#" class="btn btn-default">1</a>
+                             <a href="#" class="btn btn-primary">2</a>
+                             <a href="#" class="btn btn-default">3</a>
+                             <a href="#" class="btn btn-default">4</a>
+                             <a href="#" class="btn btn-default">5</a>
+                            <a href="#" class="btn btn-default"><i class="fa fa-angle-right"></i></a>
+                            <div class="clear" style="height: 5px;"></div>
+                         </div>
+                     </div>
+                  </div>
                </div>
             </div>
             <!-- END PLACE PAGE CONTENT HERE -->
@@ -1344,12 +1376,7 @@
     <script src="../assets/plugins/bootstrap-typehead/typeahead.bundle.min.js"></script>
     <script src="../assets/plugins/bootstrap-typehead/typeahead.jquery.min.js"></script>
     <script src="../assets/plugins/handlebars/handlebars-v4.0.5.js"></script>
-<script>
 
-    $(document).ready(function() {
-        $(".cs-wrapper .cs-wrapper").remove();
-    })
-</script>
 
     <script src="../pages/js/pages.min.js"></script>
     <!-- END VENDOR JS -->

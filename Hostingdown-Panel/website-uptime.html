@@ -111,7 +111,7 @@
                           <li>
                           <a href="add-contacts.html"><i class="fa fa-bullhorn" aria-hidden="true"></i> Add Contacts</a>
                           </li>
-                          <li class="active">
+                          <li>
                           <a href="manage-contacts.html"><i class="fa fa-group" aria-hidden="true"></i> Manage Contacts</a>
                           </li>
                       </ul>
@@ -306,8 +306,8 @@
               <div class="inner">
                 <!-- START BREADCRUMB -->
                 <ol class="breadcrumb">
-                  <li class="breadcrumb-item"><a href="#">Alerts</a></li>
-                  <li class="breadcrumb-item active">Manage Contacts</li>
+                  <li class="breadcrumb-item"><a href="#">Monitoring</a></li>
+                  <li class="breadcrumb-item active">Server Status</li>
                 </ol>
                 <!-- END BREADCRUMB -->
               </div>
@@ -328,105 +328,89 @@
                                     <button class="btn btn-link"><i class="pg-trash"></i>
                                     </button>
                                  </th>
-                                 <th style="width:19%">Name</th>
-                                 <th style="width:15%">E-Mail</th>
-                                 <th style="width:15%">Phone</th>
-                                 <th style="width:15%">Twitter</th>
-                                 <th style="width:10%">Status</th>
-                                 <th style="width:10%">On/Off</th>
-                                 <th style="width:20%">Actions</th>
+                                 <th style="width:20%">Website</th>
+                                 <th style="width:30%">Service Status</th>
+                                 <th style="width:15%">Last Checked</th>
+                                 <th style="width:30%">Graph</th>
                               </tr>
                            </thead>
                            <tbody>
-                               <tr>
-                                  <td class="v-align-middle">
-                                     <div class="checkbox text-center">
-                                        <input type="checkbox" value="3" id="checkbox1">
-                                        <label for="checkbox1" class="no-padding no-margin"></label>
-                                     </div>
-                                  </td>
-                                  <td class="v-align-middle ">
-                                     <p><a href="#Google.com" style="color:#626262;"><img style="width: 35px;height: 35px;border-radius: 100%;" src="http://blog.ramboll.com/fehmarnbelt/wp-content/themes/ramboll2/images/profile-img.jpg" alt=""> <span style="position: relative;top: 2px;left: 4px;">John Smith</span></a></p>
-                                  </td>
-                                  <td class="v-align-middle">
+                              <tr>
+                                 <td class="v-align-middle">
+                                    <div class="checkbox text-center">
+                                       <input type="checkbox" value="3" id="checkbox1">
+                                       <label for="checkbox1" class="no-padding no-margin"></label>
+                                    </div>
+                                 </td>
+                                 <td class="v-align-middle ">
+                                    <p><a href="website-uptime-site.html" style="color:#626262;">google.com</a></p>
+                                 </td>
+                                 <td class="v-align-middle">
                                      <p>
-                                     	john@smith.com
-                                     </p>
-                                  </td>
-                                  <td class="v-align-middle">
-                                      <p> +18326283650</p>
-                                  </td>
-                                  <td class="v-align-middle">
-                                     <p>
-                                      @twitterusr
-                                     </p>
-                                  </td>
-                                  <td class="v-align-middle">
-                                     <span class="label label-success">Active</span>
-                                  </td>
-                                  <td class="v-align-middle">
-                                      <input type="checkbox" data-init-plugin="switchery" />
-                                  </td>
-                                  <td>
-                                      <div class="dropdown dropdown-default">
-                                         <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                             Actions
+                                         <button type="button" class="btn btn-success btn-sm btn-outline ladda-button" style="padding: 3px 9px;pointer-events:none;" data-style="expand-left" data-plugin="ladda">
+                                             <span class="ladda-label">HTTP</span>
                                          </button>
-                                         <div class="dropdown-menu">
-                                             <a class="dropdown-item" href="#">Edit</a>
-                                             <a class="dropdown-item" href="#" style="color: red;">Delete</a>
-                                         </div>
-                                     </div>
-                                  </td>
-                               </tr>
-                               <tr>
-                                  <td class="v-align-middle">
-                                     <div class="checkbox text-center">
-                                        <input type="checkbox" value="3" id="checkbox1">
-                                        <label for="checkbox1" class="no-padding no-margin"></label>
-                                     </div>
-                                  </td>
-                                  <td class="v-align-middle ">
-                                     <p><a href="#Google.com" style="color:#626262;"><img style="width: 35px;height: 35px;border-radius: 100%;" src="http://blog.ramboll.com/fehmarnbelt/wp-content/themes/ramboll2/images/profile-img.jpg" alt=""> <span style="position: relative;top: 2px;left: 4px;">John Smith</span></a></p>
-                                  </td>
-                                  <td class="v-align-middle">
-                                     <p>
-                                     	john@smith.com
-                                     </p>
-                                  </td>
-                                  <td class="v-align-middle">
-                                      <p> +18326283650</p>
-                                  </td>
-                                  <td class="v-align-middle">
-                                     <p>
-                                      @twitterusr
-                                     </p>
-                                  </td>
-                                  <td class="v-align-middle">
-                                     <span class="label label-warning">Pause</span>
-                                  </td>
-                                  <td class="v-align-middle">
-                                      <input type="checkbox" data-init-plugin="switchery" checked />
-                                  </td>
-                                  <td>
-                                      <div class="dropdown dropdown-default">
-                                         <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                             Actions
+                                         <button type="button" class="btn btn-success btn-sm btn-outline ladda-button" style="padding: 3px 9px;pointer-events:none;" data-style="expand-left" data-plugin="ladda">
+                                             <span class="ladda-label">HTTPS</span>
                                          </button>
-                                         <div class="dropdown-menu">
-                                             <a class="dropdown-item" href="#">Edit</a>
-                                             <a class="dropdown-item" href="#" style="color: red;">Delete</a>
-                                         </div>
-                                     </div>
-                                  </td>
-                               </tr>
+                                         <button type="button" class="btn btn-success btn-sm btn-outline ladda-button" style="padding: 3px 9px;pointer-events:none;" data-style="expand-left" data-plugin="ladda">
+                                             <span class="ladda-label">FTP</span>
+                                         </button>
+                                         <button type="button" class="btn btn-default btn-sm btn-outline ladda-button" style="padding: 3px 9px;pointer-events:none;" data-style="expand-left" data-plugin="ladda">
+                                             <span class="ladda-label">IMAP</span>
+                                         </button>
+                                     </p>
+                                 </td>
+                                 <td class="v-align-middle">
+                                    <p>
+                                    02/10/2016 10:10 PM
+                                    </p>
+                                 </td>
+                                 <td class="v-align-middle">
+                                    <div id="sparkline-1"></div>
+                                 </td>
+                              </tr>
+                             <tr>
+                                <td class="v-align-middle">
+                                   <div class="checkbox text-center">
+                                      <input type="checkbox" value="3" id="checkbox1">
+                                      <label for="checkbox1" class="no-padding no-margin"></label>
+                                   </div>
+                                </td>
+                                <td class="v-align-middle ">
+                                   <p><a href="website-uptime-site.html" style="color:#626262;">google.com</a></p>
+                                </td>
+                                <td class="v-align-middle">
+                                    <p>
+                                        <button type="button" class="btn btn-success btn-sm btn-outline ladda-button" style="padding: 3px 9px;pointer-events:none;" data-style="expand-left" data-plugin="ladda">
+                                            <span class="ladda-label">HTTP</span>
+                                        </button>
+                                        <button type="button" class="btn btn-default btn-sm btn-outline ladda-button" style="padding: 3px 9px;pointer-events:none;" data-style="expand-left" data-plugin="ladda">
+                                            <span class="ladda-label">HTTPS</span>
+                                        </button>
+                                        <button type="button" class="btn btn-success btn-sm btn-outline ladda-button" style="padding: 3px 9px;pointer-events:none;" data-style="expand-left" data-plugin="ladda">
+                                            <span class="ladda-label">FTP</span>
+                                        </button>
+                                        <button type="button" class="btn btn-success btn-sm btn-outline ladda-button" style="padding: 3px 9px;pointer-events:none;" data-style="expand-left" data-plugin="ladda">
+                                            <span class="ladda-label">IMAP</span>
+                                        </button>
+                                    </p>
+                                </td>
+                                <td class="v-align-middle">
+                                   <p>
+                                   02/10/2016 10:10 PM
+                                   </p>
+                                </td>
+                                <td class="v-align-middle">
+                                   <div id="sparkline-2"></div>
+                                </td>
+                             </tr>
                            </tbody>
                         </table>
                      </div>
                      <div class="row no-margin">
                          <div class="col-md-6" style="padding-left: 20px;">
-                             <a href="#" class="btn btn-warning">Pause</a>
-                             <a href="#" class="btn btn-danger">Delete</a>
+                             &nbsp;
                          </div>
                          <div class="col-md-6 text-right">
                              <a href="#" class="btn btn-default"><i class="fa fa-angle-left"></i></a>

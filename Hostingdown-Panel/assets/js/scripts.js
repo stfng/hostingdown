@@ -51,6 +51,19 @@
 
     });
 
+    $(".toggle-sidebar").click(function(x) {
+        x.preventDefault();
+        if ($('body').hasClass('sidebar-open')) {
+            var s = setInterval(function() {
+                $('body').removeClass('sidebar-open');
+                $('.page-sidebar').removeClass('visible');
+            }, 1)
+            setTimeout(function () {
+                clearInterval(s);
+            }, 300)
+        }
+    })
+
     
     $('.panel-collapse label').on('click', function(e){
         e.stopPropagation();

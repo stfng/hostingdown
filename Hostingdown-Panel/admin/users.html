@@ -117,7 +117,16 @@
                    <span class=" arrow"></span></a>
                    <ul class="sub-menu">
                       <li>
-                         <a href="notifications.html"><i class="fa fa-bell" aria-hidden="true"></i> Notifications</a>
+                         <a href="change-webhost.html"><i class="fa fa-bell" aria-hidden="true"></i> Change Webhost</a>
+                      </li>
+                   </ul>
+                </li>
+                <li class="m-t-30" style="margin-bottom: -20px !important; margin-top: 0 !important;">
+                   <a href="javascript:;" style="display: none;"><span class="icon-thumbnail">W</span><span class="title"></span>
+                   <span class=" arrow"></span></a>
+                   <ul class="sub-menu">
+                      <li>
+                         <a href="asign-webhost.html"><i class="fa fa-bell" aria-hidden="true"></i> Asign Webhost</a>
                       </li>
                    </ul>
                 </li>
@@ -187,7 +196,7 @@
                 </ol>
                 <!-- END BREADCRUMB -->
                 <div class="newSearch">
-                  <input type="text" placeholder="A keyword...">
+                  <input type="text" placeholder="Search users (ID or email)">
                   <button><i class="fa fa-search"></i></button>
                 </div>
               </div>
@@ -200,6 +209,10 @@
             <div class="row">
                <div class="col-md-12">
                   <div class="card card-transparent" style="background: white; padding-bottom: 25px;">
+                    <div class="card-header ">
+                        <div class="card-title">Total Users: 1216</div>
+                        <a href="add-user.html" class="btn btn-success" style="float: right; margin-top: -6px;">Add New User</a>
+                      </div>
                      <div class="card-block">
                          <table class="table table-hover" id="basicTable">
                            <thead>
@@ -209,8 +222,8 @@
                                     </button>
                                  </th>
                                  <th>ID</th>
-                                 <th>E-Mail</th>
-                                 <th>Total Domains</th>
+                                 <th>E-Mail <i class="fa fa-sort"></i> </th>
+                                 <th>Total Domains <i class="fa fa-sort"></i> </th>
                                  <th>Date Joined</th>
                                  <th>Last Online</th>
                                  <th>Login IP</th>
@@ -226,12 +239,10 @@
                                       </div>
                                    </td>
                                    <td class="v-align-middle ">
-                                      <p>1</p>
+                                      <a href="http://live.msdeveci.net/41/admin/user-info.html">1</a>
                                    </td>
                                    <td class="v-align-middle">
-                                      <p>
-                                          admin@google.com
-                                      </p>
+                                      <a href="http://live.msdeveci.net/41/admin/user-info.html">admin@google.com</a>
                                    </td>
                                    <td class="v-align-middle">
                                       <p>3</p>
@@ -259,12 +270,10 @@
                                       </div>
                                    </td>
                                    <td class="v-align-middle ">
-                                      <p>1</p>
+                                      <a href="http://live.msdeveci.net/41/admin/user-info.html">2</a>
                                    </td>
                                    <td class="v-align-middle">
-                                      <p>
-                                          admin@google.com
-                                      </p>
+                                      <a href="http://live.msdeveci.net/41/admin/user-info.html">admin@google.com</a>
                                    </td>
                                    <td class="v-align-middle">
                                       <p>3</p>
@@ -292,12 +301,10 @@
                                       </div>
                                    </td>
                                    <td class="v-align-middle ">
-                                      <p>1</p>
+                                      <a href="http://live.msdeveci.net/41/admin/user-info.html">3</a>
                                    </td>
                                    <td class="v-align-middle">
-                                      <p>
-                                          admin@google.com
-                                      </p>
+                                      <a href="http://live.msdeveci.net/41/admin/user-info.html">admin@google.com</a>
                                    </td>
                                    <td class="v-align-middle">
                                       <p>3</p>
@@ -322,7 +329,7 @@
                      </div>
                      <div class="row no-margin">
                          <div class="col-md-6" style="padding-left: 20px;">
-                             <a href="#" class="btn btn-warning">Pause</a>
+                             <a href="#" class="btn btn-warning">Suspend</a>
                              <a href="#" class="btn btn-danger">Delete</a>
                          </div>
                          <div class="col-md-6 text-right">
@@ -1406,143 +1413,6 @@
       </div>
     </div>
     <!-- END QUICKVIEW-->
-    <!-- START OVERLAY -->
-    <div class="overlay hide" data-pages="search">
-      <!-- BEGIN Overlay Content !-->
-      <div class="overlay-content has-results m-t-20">
-        <!-- BEGIN Overlay Header !-->
-        <div class="container-fluid">
-          <!-- BEGIN Overlay Logo !-->
-          <img class="overlay-brand" src="../assets/img/logo.png" alt="logo" data-src="../assets/img/logo.png" data-src-retina="../assets/img/logo_2x.png" width="78" height="22">
-          <!-- END Overlay Logo !-->
-          <!-- BEGIN Overlay Close !-->
-          <a href="#" class="close-icon-light overlay-close text-black fs-16">
-            <i class="pg-close"></i>
-          </a>
-          <!-- END Overlay Close !-->
-        </div>
-        <!-- END Overlay Header !-->
-        <div class="container-fluid">
-          <!-- BEGIN Overlay Controls !-->
-          <input id="overlay-search" class="no-border overlay-search bg-transparent" placeholder="Search..." autocomplete="off" spellcheck="false">
-          <br>
-          <div class="inline-block">
-            <div class="checkbox right">
-              <input id="checkboxn" type="checkbox" value="1" checked="checked">
-              <label for="checkboxn"><i class="fa fa-search"></i> Search within page</label>
-            </div>
-          </div>
-          <div class="inline-block m-l-10">
-            <p class="fs-13">Press enter to search</p>
-          </div>
-          <!-- END Overlay Controls !-->
-        </div>
-        <!-- BEGIN Overlay Search Results, This part is for demo purpose, you can add anything you like !-->
-        <div class="container-fluid">
-          <span>
-                <strong>suggestions :</strong>
-            </span>
-          <span id="overlay-suggestions"></span>
-          <br>
-          <div class="search-results m-t-40">
-            <p class="bold">Pages Search Results</p>
-            <div class="row">
-              <div class="col-md-6">
-                <!-- BEGIN Search Result Item !-->
-                <div class="">
-                  <!-- BEGIN Search Result Item Thumbnail !-->
-                  <div class="thumbnail-wrapper d48 circular bg-success text-white inline m-t-10">
-                    <div>
-                      <img width="50" height="50" src="../assets/img/profiles/avatar.jpg" data-src="../assets/img/profiles/avatar.jpg" data-src-retina="../assets/img/profiles/avatar2x.jpg" alt="">
-                    </div>
-                  </div>
-                  <!-- END Search Result Item Thumbnail !-->
-                  <div class="p-l-10 inline p-t-5">
-                    <h5 class="m-b-5"><span class="semi-bold result-name">ice cream</span> on pages</h5>
-                    <p class="hint-text">via john smith</p>
-                  </div>
-                </div>
-                <!-- END Search Result Item !-->
-                <!-- BEGIN Search Result Item !-->
-                <div class="">
-                  <!-- BEGIN Search Result Item Thumbnail !-->
-                  <div class="thumbnail-wrapper d48 circular bg-success text-white inline m-t-10">
-                    <div>T</div>
-                  </div>
-                  <!-- END Search Result Item Thumbnail !-->
-                  <div class="p-l-10 inline p-t-5">
-                    <h5 class="m-b-5"><span class="semi-bold result-name">ice cream</span> related topics</h5>
-                    <p class="hint-text">via pages</p>
-                  </div>
-                </div>
-                <!-- END Search Result Item !-->
-                <!-- BEGIN Search Result Item !-->
-                <div class="">
-                  <!-- BEGIN Search Result Item Thumbnail !-->
-                  <div class="thumbnail-wrapper d48 circular bg-success text-white inline m-t-10">
-                    <div><i class="fa fa-headphones large-text "></i>
-                    </div>
-                  </div>
-                  <!-- END Search Result Item Thumbnail !-->
-                  <div class="p-l-10 inline p-t-5">
-                    <h5 class="m-b-5"><span class="semi-bold result-name">ice cream</span> music</h5>
-                    <p class="hint-text">via pagesmix</p>
-                  </div>
-                </div>
-                <!-- END Search Result Item !-->
-              </div>
-              <div class="col-md-6">
-                <!-- BEGIN Search Result Item !-->
-                <div class="">
-                  <!-- BEGIN Search Result Item Thumbnail !-->
-                  <div class="thumbnail-wrapper d48 circular bg-info text-white inline m-t-10">
-                    <div><i class="fa fa-facebook large-text "></i>
-                    </div>
-                  </div>
-                  <!-- END Search Result Item Thumbnail !-->
-                  <div class="p-l-10 inline p-t-5">
-                    <h5 class="m-b-5"><span class="semi-bold result-name">ice cream</span> on facebook</h5>
-                    <p class="hint-text">via facebook</p>
-                  </div>
-                </div>
-                <!-- END Search Result Item !-->
-                <!-- BEGIN Search Result Item !-->
-                <div class="">
-                  <!-- BEGIN Search Result Item Thumbnail !-->
-                  <div class="thumbnail-wrapper d48 circular bg-complete text-white inline m-t-10">
-                    <div><i class="fa fa-twitter large-text "></i>
-                    </div>
-                  </div>
-                  <!-- END Search Result Item Thumbnail !-->
-                  <div class="p-l-10 inline p-t-5">
-                    <h5 class="m-b-5">Tweats on<span class="semi-bold result-name"> ice cream</span></h5>
-                    <p class="hint-text">via twitter</p>
-                  </div>
-                </div>
-                <!-- END Search Result Item !-->
-                <!-- BEGIN Search Result Item !-->
-                <div class="">
-                  <!-- BEGIN Search Result Item Thumbnail !-->
-                  <div class="thumbnail-wrapper d48 circular text-white bg-danger inline m-t-10">
-                    <div><i class="fa fa-google-plus large-text "></i>
-                    </div>
-                  </div>
-                  <!-- END Search Result Item Thumbnail !-->
-                  <div class="p-l-10 inline p-t-5">
-                    <h5 class="m-b-5">Circles on<span class="semi-bold result-name"> ice cream</span></h5>
-                    <p class="hint-text">via google plus</p>
-                  </div>
-                </div>
-                <!-- END Search Result Item !-->
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- END Overlay Search Results !-->
-      </div>
-      <!-- END Overlay Content !-->
-    </div>
-    <!-- END OVERLAY -->
     <!-- BEGIN VENDOR JS -->
     <script src="https://ajax.cloudflare.com/cdn-cgi/scripts/78d64697/cloudflare-static/email-decode.min.js"></script>
     <script src="../assets/plugins/pace/pace.min.js" type="text/javascript"></script>

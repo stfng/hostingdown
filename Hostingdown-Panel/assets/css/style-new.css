@@ -528,3 +528,111 @@ span.desc {
   background: white;
   border: none !important;
 }
+
+.pl50 {
+  padding-left: 50px !important;
+}
+
+@media (min-width:50px) and (max-width:900px) {
+  .header div {
+    display: none !important;
+  }
+  .container-fluid .card-transparent {
+      margin: 0 !important;
+  }
+  .no-padding {
+    padding: 0 15px !important;
+  }
+  .card .row {
+      width: 100%;
+      text-align: center;
+      justify-content: center;
+  }
+
+  .text-right {
+      text-align: center !important;
+      margin-top: 20px;
+  }
+  .newSearch {
+      position: relative;
+      width: 100%;
+  }
+
+  .newSearch input {
+      border-radius: 0;
+      width: 100%;
+      border-top: 1px solid #e6e6e6;
+      margin: 0;
+  }
+  .table {
+      width: 100% !important;
+      overflow: scroll;
+      display: block !important;
+  }
+  .newSearch button {
+    line-height: 38px;
+  }
+  .table thead tr th:nth-child(1),
+  .table thead tr th:nth-child(2) {
+      min-width: 50px;
+  }
+  .table thead tr th {
+      min-width: 170px;
+  }
+  .card-header {
+      text-align: center;
+  }
+
+  .card-header a {
+      margin: 0 auto !important;
+      display: block;
+      float: none !important;
+  }
+  .form-group.form-group-default {
+      text-align: left;
+  } 
+  div h1 {
+      text-align: center;
+  }
+  .add-webhst {
+      display: block;
+      margin: 0 auto;
+  }
+  .card.card-transparent > .card-block {
+      padding: 0 !important;
+  }
+  form#form-register div {
+      width: 100% !important;
+      margin-left: 0;
+  }
+  .pl50 {
+    padding-left: 15px !important;
+  }
+  .tc {
+    text-align: center;
+  }
+  .tc form#form-project {
+      margin-top: 25px !important;
+  }
+  
+}
+.newSearchh {height: 34px;display: inline-block;}
+
+.newSearchh button {
+    width: 50px;
+    height: 44px;
+    float: left;
+    display: block;
+    border: none;
+    font-size: 22px;
+    color: #0000008a;
+    background: white !important;
+}
+
+.newSearchh input {
+    float: left;
+    display: block;
+    width: 400px;
+    height: 40px;
+    border: none;
+}
